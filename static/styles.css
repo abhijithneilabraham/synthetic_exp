@@ -1,0 +1,12 @@
+.annotated {
+    background-color: yellow; /* Default color, can use JavaScript to change based on tag */
+    padding: 0 4px;
+}
+textarea, #document {
+    width: 80%;
+    height: 150px;
+    margin: 10px;
+}
+input, button {
+    margin: 10px;
+}

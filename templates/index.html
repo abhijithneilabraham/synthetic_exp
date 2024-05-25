@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Annotation Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>Text Annotation Tool</h1>
+    <div contenteditable="true" id="document" style="border: 1px solid #ccc; padding: 10px; min-height: 200px;">
+        Enter or paste text here...
+    </div>
+    <div id="tagPrompt" style="display: none; position: absolute; background: white; border: 1px solid #ddd; padding: 5px;">
+        <input type="text" id="tagInput" placeholder="Enter tag" />
+    <button id="applyTagButton">Tag</button>
+    </div>
+    <button onclick="submitData()">Generate Dataset</button>
+    <div id="output"></div>
+</body>
+</html>
